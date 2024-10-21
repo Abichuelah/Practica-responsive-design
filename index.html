@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Responsive Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">LOREM IPSUM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Campo de búsqueda visible solo en pantallas pequeñas y medianas -->
+                <li class="nav-item d-lg-none">
+                    <form class="d-flex mb-2">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Dolor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sit</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Amet</a>
+                </li>
+            </ul>
+            <!-- Campo de búsqueda visible en pantallas grandes -->
+            <form class="d-none d-lg-flex me-3">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <!-- Opción visible solo en pantallas pequeñas y medianas -->
+            <div class="d-lg-none">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="optionsBtn">Opciones</a>
+                        <ul class="dropdown-menu" id="optionsMenu">
+                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                            <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                            <li><a class="dropdown-item" href="#">Opción 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="text-center my-5 d-none d-lg-block">
+    <h3>Lorem ipsum...</h3>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</h5>
+            </div>
+            <div class="carousel-item">
+                <h5>...Optio recusandae, cumque voluptas dicta...</h5>
+            </div>
+            <div class="carousel-item">
+                <h5>...expedita ex quam assumenda doloremque dolore labore! Dolore expedita rem voluptas!</h5>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row mx-md-4 mx-sm-1">
+        <div class="col-lg-3 col-md-12 d-none d-lg-block" id="optionsMenu">
+            <div class="list-group">
+                <button class="list-group-item list-group-item-action p-3"><a href="#" class="link-dark">Opción 1</a></button>
+                <button class="list-group-item list-group-item-action p-3"><a href="#" class="link-dark">Opción 2</a></button>
+                <button class="list-group-item list-group-item-action p-3"><a href="#" class="link-dark">Opción 3</a></button>
+                <button class="list-group-item list-group-item-action p-3"><a href="#" class="link-dark">Opción 4</a></button>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <article class="bg-light p-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac orci nec eros pharetra varius. Sed vestibulum dolor at lectus tincidunt, ut gravida nisl dictum.</article>
+            <article class="bg-light p-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada, odio in fermentum consectetur, lectus libero gravida nunc.</article>
+            <article class="bg-light p-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</article>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <article class="bg-light p-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac libero eget ante dapibus volutpat.</article>
+            <article class="bg-light p-3 mb-3">Suspendisse potenti. Proin blandit tortor sed nisl tincidunt, et malesuada elit pharetra.</article>
+            <article class="bg-light p-3 mb-3">Sed euismod, orci non faucibus vulputate, eros elit vestibulum nulla.</article>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <article class="bg-light p-3 mb-3">Praesent in diam ut est feugiat aliquam sit amet nec elit. Duis ut enim metus.</article>
+            <article class="bg-light p-3 mb-3">Morbi ut libero at libero hendrerit gravida. Etiam vel malesuada nulla.</article>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
